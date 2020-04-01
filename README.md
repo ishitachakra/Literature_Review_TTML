@@ -10,7 +10,7 @@ Key Takeaways: Noise can be either due to difficult documents ( it is hard for h
 
 2. Sukhbaatar, Sainbayar, and Rob Fergus. "Learning from noisy labels with deep neural networks." arXiv preprint arXiv:1406.2080 2.3 (2014): 4. http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.749.1795&rep=rep1&type=pdf
 
-Key Takeaways: They introduce an extra noise layer into the network which adapts the network outputs to match the noisy label distribution. The parameters of this noise layer can be estimated as part of the training process and involve simplemodifications to current training infrastructures for deep networks. Mostly for text data.
+Key Takeaways: They introduce an extra noise layer into the network which adapts the network outputs to match the noisy label distribution. The parameters of this noise layer can be estimated as part of the training process and involve simplemodifications to current training infrastructures for deep networks. Mostly for image data.
 #Thought: Much of the robustness work is about image data and it is not clear how to adapt it to text
 
 3. Sukhbaatar, Sainbayar, et al. "Training convolutional networks with noisy labels." arXiv preprint arXiv:1406.2080 (2014).
@@ -20,3 +20,11 @@ Key Takeaways:
 4. Simple Remedies :
 Running experiments on Amazon Mechanical Turk- http://sjdm.org/~baron/journal/10/10630a/jdm10630a.pdf
 Using multiple raters: https://dl.acm.org/doi/10.5555/2002472.2002490
+
+# Papers Related to : Classification using only positive labels
+Elkan and Noto 2008
+Learning Classifiers from  only Positive and Unlabeled Data
+https://dl.acm.org/doi/abs/10.1145/1401890.1401920
+
+Key takeaway: Estimate a function that can predict probability of being positive conditional on being labeled. This function can be a good approximation of traditional classifier function.
+
